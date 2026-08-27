@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.2.0
+  version: 1.2.1
 
 package:
   name: livekit-api
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-api/livekit_api-${{ version }}.tar.gz
-    sha256: a89817b3bca9584873786ff07209839308217537a42f95ecb2609aafaa109ddc
+    sha256: eee78dba493b736bc8422660debc7cf89340f1b80c63890a36a18d99c938045c
   - url: https://raw.githubusercontent.com/livekit/python-sdks/refs/tags/api-v${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -30,7 +30,7 @@ requirements:
     - aiohttp >=3.9.0
     - protobuf >=4
     - types-protobuf >=4
-    - livekit-protocol >=1.1.19,<2.0.0
+    - livekit-protocol >=1.1.25,<2.0.0
 tests:
   - python:
       python_version:
